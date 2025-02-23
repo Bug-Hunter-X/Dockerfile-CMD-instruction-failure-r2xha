@@ -1,0 +1,19 @@
+FROM node:16
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+# Add a start script to package.json
+# Example: 
+# {
+#   "scripts": {
+#     "start": "node index.js"
+#   }
+# }
+
+CMD ["npm", "start"]
