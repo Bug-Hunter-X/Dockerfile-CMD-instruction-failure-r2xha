@@ -1,0 +1,1 @@
+This repository demonstrates a common Dockerfile error and its solution. The initial Dockerfile uses a `CMD` instruction that fails to execute because the specified start script is missing from the `package.json` file. The solution involves adding a `start` script to the `package.json` to enable the `CMD` instruction to launch the application correctly. 
